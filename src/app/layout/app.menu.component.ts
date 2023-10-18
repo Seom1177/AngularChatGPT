@@ -24,7 +24,7 @@ export class AppMenuComponent implements OnInit {
                 label: 'Información',
                 items: [
                     { label: 'Ayuda', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
-                    { label: 'Encuesta', icon: 'pi pi-fw pi-link', routerLink: ['forms.office.com/r/vwfDWZ5e2Z'], },
+                    { label: 'Encuesta', icon: 'pi pi-fw pi-link', routerLink: ['/encuesta'], },
                 ]
             }
         ];
