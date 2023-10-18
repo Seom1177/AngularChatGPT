@@ -9,6 +9,13 @@ import { ButtonModule } from 'primeng/button';
 import { StyleClassModule } from 'primeng/styleclass';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { DashboardsRoutingModule } from './dashboard-routing.module';
+import { ChatComponent } from 'src/app/layout/pages/components/chat/chat.component';
+import { CardModule } from 'primeng/card';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { InputTextModule } from 'primeng/inputtext';
+import { FieldsetModule } from 'primeng/fieldset';
+import { MessagesModule } from 'primeng/messages';
+
 
 @NgModule({
     imports: [
@@ -20,8 +27,16 @@ import { DashboardsRoutingModule } from './dashboard-routing.module';
         StyleClassModule,
         PanelMenuModule,
         ButtonModule,
-        DashboardsRoutingModule
+        DashboardsRoutingModule,
+        CardModule,
+        ScrollPanelModule,
+        FieldsetModule,
+        MessagesModule,
+        InputTextModule
     ],
-    declarations: [DashboardComponent]
+    declarations: [
+        DashboardComponent,
+        ChatComponent
+    ]
 })
 export class DashboardModule { }

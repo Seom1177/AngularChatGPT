@@ -1,0 +1,20 @@
+<p-scrollPanel [style]="{ width: '100%', height: '360px' }">
+    <ng-container *ngFor="let message of messages">
+        <div class="message"
+        [ngClass]="{
+            'from': message.author === 'bot',
+            'to': message.author === 'user' 
+        }">
+        &shy;{{ message.content }}
+        </div>
+    </ng-container>
+</p-scrollPanel>
+
+<hr>
+<div class="p-inputgroup">
+    <span class="p-inputgroup-addon">
+        <i class="pi pi-user"></i>
+    </span>
+    <input type="text" pInputText [(ngModel)]="value" (keyup.enter)="sendMessage()" placeholder="Pregunta...">
+    <button type="button" pButton icon="pi pi-send" styleClass="p-button-success" (click)="sendMessage()"></button>
+</div>
