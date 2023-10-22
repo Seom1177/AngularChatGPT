@@ -15,7 +15,10 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { InputTextModule } from 'primeng/inputtext';
 import { FieldsetModule } from 'primeng/fieldset';
 import { MessagesModule } from 'primeng/messages';
-
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { AutoFocusModule } from 'primeng/autofocus';
 
 @NgModule({
     imports: [
@@ -32,11 +35,17 @@ import { MessagesModule } from 'primeng/messages';
         ScrollPanelModule,
         FieldsetModule,
         MessagesModule,
-        InputTextModule
+        InputTextModule,
+        ToastModule,
+        AutoFocusModule,
+        ProgressBarModule
     ],
     declarations: [
         DashboardComponent,
         ChatComponent
+    ],
+    providers: [
+        MessageService
     ]
 })
 export class DashboardModule { }
