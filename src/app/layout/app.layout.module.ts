@@ -17,7 +17,6 @@ import { AppFooterComponent } from './app.footer.component';
 import { AppConfigModule } from './config/config.module';
 import { AppSidebarComponent } from "./app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
-import { InquiryComponent } from './pages/components/inquiry/inquiry.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +26,6 @@ import { InquiryComponent } from './pages/components/inquiry/inquiry.component';
         AppMenuComponent,
         AppSidebarComponent,
         AppLayoutComponent,
-        InquiryComponent,
     ],
     imports: [
         BrowserModule,
