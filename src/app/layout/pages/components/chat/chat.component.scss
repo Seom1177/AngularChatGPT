@@ -9,13 +9,13 @@
   .message.to {
     background-color: var(--primary-color);
     color: var(--primary-color-text);
-    margin-left: 100px;
+    margin-left: 10%;
     text-align: right;
   }
   .message.from {
     background-color: var(--surface-ground);
     color: var(--text-color);
-    margin-right: 100px;
+    margin-right: 10%;
   }
   .message.to + .message.to,
   .message.from + .message.from {
