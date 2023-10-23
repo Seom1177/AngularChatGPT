@@ -43,3 +43,4 @@ layout.css
 src/assets/demo/styles/badges.css
 src/environments/environment.prod.ts
 src/environments/environment.ts
+.firebase/*
